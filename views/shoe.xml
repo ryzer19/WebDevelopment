@@ -1,0 +1,26 @@
+<shoe>
+    <nike>
+        <size>6</size>
+        <size>7</size>
+        <size>8</size>
+        <size>9</size>
+    </nike>
+    <adidas>
+        <size>6</size>
+        <size>6.5</size>
+        <size>8.5</size>
+        <size>11</size>
+    </adidas>
+    <valentino>
+        <size>7.5</size>
+        <size>8</size>
+        <size>9.5</size>
+        <size>10</size>
+    </valentino>
+    <converse>
+        <size>6</size>
+        <size>7</size>
+        <size>10</size>
+        <size>10.5</size>
+    </converse>
+</shoe>

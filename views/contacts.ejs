@@ -1,0 +1,25 @@
+ <% include ../partials/header %>
+ 
+  <h1>Product Requests</h1>
+  <div class="contact">
+    <% contact.forEach(function(contacts) { %>
+                
+                <div class="item">
+                    <%= contacts.id %><br><br>
+                    <%= contacts.name %><br><br>
+                    <%= contacts.email %><br><br>
+                    <%= contacts.comment %><br><br>
+                
+                <button class="button"><a href="/deletecontact/<%= contacts.id %>">Delete</a></button>
+                   <button class="button"><a href="/editcontact/<%= contacts.id %>">Edit</a></button>
+                   
+                    </div>
+                    
+                     
+
+              
+         <% }); %>
+  </div>
+
+
+<% include ../partials/footer %> 

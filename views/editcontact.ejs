@@ -1,0 +1,34 @@
+ <% include ../partials/header %>
+
+<div class="add">
+  <h1>Welcome to the product request page  <br><br>
+  <div class="grid-container">
+        <% indOne.forEach(function(contacts) { %>
+            <form accept-charset="UTF-8" action="/editcontact/<%= contacts.id %>" method="post">    
+                <div class="item">
+                  <label for="name">Name</label>
+                    <input name="name" type="text" value="<%= contacts.name %>" />
+                  
+                  
+                  <label for="price">Request</label>
+                    <input name="comment" type="text" value="<%= contacts.comment %>" />
+                    
+                   
+                   <label for="image">Email</label> 
+                    <input name="email" type="text" value="<%= contacts.email %>" />
+                    
+                   
+<button class="button">Edit</button>
+                    
+                   
+                    </div>
+              </form>
+       <% }); %>
+         
+         
+    </div>
+  </h1>
+</div>
+
+
+<% include ../partials/footer %>

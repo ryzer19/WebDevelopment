@@ -1,0 +1,136 @@
+<% include ../partials/header %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+   <script>
+$(document).ready(function(){
+    $("#slider1").click(function(){
+        $("#nikeSlide").slideToggle(2000);
+    });
+});
+
+$(document).ready(function(){
+    $("#slider2").click(function(){
+        $("#adidasSlide").slideToggle(2000);
+    });
+});
+
+$(document).ready(function(){
+    $("#slider3").click(function(){
+        $("#valentinoSlide").slideToggle(2000);
+    });
+});
+
+$(document).ready(function(){
+    $("#slider4").click(function(){
+        $("#converseSlide").slideToggle(2000);
+    });
+});
+
+$(document).ready(function(){
+$("#AddToCart1").click(function(){
+    $("#addedIn1").css("color", "orange").slideDown(2000).delay(500).slideUp(500);
+    });
+});
+
+$(document).ready(function(){
+$("#AddToCart2").click(function(){
+    $("#addedIn2").css("color", "orange").slideDown(2000).delay(500).slideUp(500);
+    });
+});
+
+$(document).ready(function(){
+$("#AddToCart3").click(function(){
+    $("#addedIn3").css("color", "orange").slideDown(2000).delay(500).slideUp(500);
+    });
+});
+
+$(document).ready(function(){
+$("#AddToCart4").click(function(){
+    $("#addedIn4").css("color", "orange").slideDown(2000).delay(500).slideUp(500);
+    });
+});
+
+$(document).ready(function(){
+    $("#nikeSlide").click(function(){
+        $("#sizes1").fadeOut();
+        $("#sizes1").fadeOut("slow");
+        $("#sizes1").fadeOut(3000);
+    });
+});
+
+$(document).ready(function(){
+    $("#adidasSlide").click(function(){
+        $("#sizes2").fadeOut();
+        $("#sizes2").fadeOut("slow");
+        $("#sizes2").fadeOut(3000);
+    });
+});
+
+(document).ready(function(){
+    $("#valentinoSlide").click(function(){
+        $("#sizes3").fadeOut();
+        $("#sizes3").fadeOut("slow");
+        $("#sizes3").fadeOut(3000);
+    });
+});
+
+$(document).ready(function(){
+    $("#converseSlide").click(function(){
+        $("#sizes4").fadeOut();
+        $("#sizes4").fadeOut("slow");
+        $("#sizes4").fadeOut(3000);
+    });
+});
+</script>
+
+<div class="prod">
+  
+      <div class="nike">
+            <h3><b>Nike React Element</b></h3><br>
+            <img src="images/shoe1.jpg" style="width:400px;height:400px;;"/>
+            <p>Price: €160</p>
+            <button class="button" id="slider1" >Size</button>
+            <p id="shoe1">Click to view Available Sizes</p>
+            <div id="nikeSlide" style="display: none;"><div id="sizes1"> 8, 8.5, 9.5, 10</div></div>
+            <button id="AddToCart1" class="w3-btn w3-theme">Add To Cart</button> 	
+            <div id="addedIn1" >Added To Cart</div>
+      </div>
+      
+      <div class="adidas">
+            <h3><b>Adidas Yeezy v2 Zebra</b></h3><br>
+            <img src="images/shoe2.jpg" alt="Yeezy" style="width:400px;height:400px;;"/>
+            <p>Price: €220</p>
+            <button class="button" id="slider2">Size</button>
+            <p id="shoe2">Click to view Available Sizes</p>
+            <div id="adidasSlide" style="display: none;"><div id="sizes2"> 7, 8, 9, 10</div></div>
+            <button id="AddToCart2" class="w3-btn w3-theme">Add To Cart</button> 	
+            <div id="addedIn2" >Added To Cart</div>
+      </div>
+      
+       <div class="valentino">
+            <h3><b>Valentino Star Rockrunner</b></h3><br>
+            <img src="images/shoe3.jpg" alt="Valentino" style="width:400px;height:400px;;"/>
+            <p>Price: €595</p>
+            <button class="button" id="slider3">Size</button>
+            <p id="shoe3">Click to view Available Sizes</p>
+            <div id="valentinoSlide" style="display: none;"><div id="sizes3"> 7, 8.5, 10.5, 12</div></div>
+            <button id="AddToCart3" class="w3-btn w3-theme">Add To Cart</button> 	
+            <div id="addedIn3" >Added To Cart</div>
+      </div>
+      
+       <div class="converse">
+            <h3><b>Converse</b></h3><br>
+            <img src="images/shoe4.jpg" alt="Converse" style="width:400px;height:400px;"/>
+            <p>Price: €45</p>
+            <button class="button" id="slider4">Size</button>
+            <p id="shoe4">Click to view Available Sizes</p>
+            <div id="converseSlide" style="display: none;"><div id="sizes4"> 6, 7.5, 9.5, 11</div></div>
+            <button id="AddToCart4" class="w3-btn w3-theme">Add To Cart</button> 	
+            <div id="addedIn4" >Added To Cart</div>
+       </div>
+        
+</div>
+
+ 
+  <% include ../partials/footer %>

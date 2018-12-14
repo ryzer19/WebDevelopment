@@ -1,0 +1,25 @@
+ <% include ../partials/header %>
+ 
+  <h1>Website Reviews</h1>
+  <div class="review">
+    <% review.forEach(function(reviews) { %>
+                
+                <div class="item">
+                    <%= reviews.id %><br><br>
+                    <%= reviews.name %><br><br>
+                    <%= reviews.email %><br><br>
+                    <%= reviews.review %><br><br>
+                
+                <button class="button"><a href="/deletereview/<%= reviews.id %>">Delete</a></button>
+                   <button class="button"><a href="/editreview/<%= reviews.id %>">Edit</a></button>
+                   
+                    </div>
+                    
+                     
+
+              
+         <% }); %>
+  </div>
+
+
+<% include ../partials/footer %>

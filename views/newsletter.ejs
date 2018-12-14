@@ -1,0 +1,76 @@
+ <% include ../partials/header %>
+
+<head>
+		<title> 3RD Footwear </title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="app.css">
+	</head>
+<body>
+
+<script>
+function sampleForm(){
+
+
+// code to verify name in form
+
+var x = document.getElementById("fname").value;
+var y = document.getElementById("email").value;
+var result = (/@/.test(y));
+var c = document.getElementById("emailv").value;
+var z =  document.getElementById("number").value;
+var number = (/[0-9]/.test(z));
+
+
+if (x == "" || result == false || c !== y  || number == false){
+    
+    document.getElementById("alert1").innerHTML="Please verify data";
+    
+}
+
+else {
+    
+    alert("Thank you for subscribing !");
+}
+
+}
+
+
+
+
+
+
+
+</script>
+ 
+
+<div class="form">
+      <div class="formhead">
+        <h1>Sign up to our newsletter</h1> 
+        <h2> to recieve updates of new stock.</h2>
+        
+        
+<div class="w3-container">
+
+<div id="buttonhold">
+<input type="text" id="fname" name="firstname" placeholder="Your Name..">
+<p id="alert1" class="alertx"></p>
+
+<input type="text" id="email" name="email" placeholder="Your Email..">
+<p id="alert2" class="alertx"></p>
+
+<input type="text" id="emailv" name="emailv" placeholder="Verfiy Email..">
+<p id="alertv" class="alertx"></p>
+
+<input type="text" id="number" name="number" placeholder="Phone Number..">
+<p id="alertp" class="alertx"></p>
+
+<button class="button" onclick="sampleForm()">Submit</button>
+
+
+</div>
+
+ </div>
+</body>
+
+
+<% include ../partials/footer %>

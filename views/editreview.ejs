@@ -1,0 +1,34 @@
+ <% include ../partials/header %>
+
+<div class="add">
+  <h1>Welcome to the review page  <br><br>
+  <div class="grid-container">
+        <% indOne.forEach(function(review) { %>
+            <form accept-charset="UTF-8" action="/editreview/<%= review.id %>" method="post">    
+                <div class="item">
+                  <label for="name">Name</label>
+                    <input name="name" type="text" value="<%= review.name %>" />
+                  
+                  
+                  <label for="review">Review</label>
+                    <input name="review" type="text" value="<%= review.review %>" />
+                    
+                   
+                   <label for="email">Email</label> 
+                    <input name="email" type="text" value="<%= review.email %>" />
+                    
+                   
+<button class="button">Edit</button>
+                    
+                   
+                    </div>
+              </form>
+       <% }); %>
+         
+         
+    </div>
+  </h1>
+</div>
+
+
+<% include ../partials/footer %>
